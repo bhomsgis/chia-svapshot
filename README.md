@@ -1,5 +1,9 @@
 # CHIA-SVApshot
 
+<p align="center">
+  <img src="assets/chia-svapshot-logo.png" alt="CHIA-SVApshot" width="280">
+</p>
+
 CHIA-SVApshot runs an LLM-driven RTL optimisation loop on top of [CHIA](https://docs.chialoops.ai).
 The loop generates SystemVerilog assertions (SVA) for a design with SVApshot, freezes the proved
 assertions as a snapshot, asks an LLM to rewrite the RTL, re-proves the snapshot on every rewrite, and
