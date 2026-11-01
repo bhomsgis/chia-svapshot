@@ -1,0 +1,138 @@
+Formal core verbose view
+Property      : tlb.u_tlb_sva.a_hit_never_triggers_ptw_req 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     1 
+    cache_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_invalidate_cancels_pending_ptw_req 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     2 
+    cache_tlb_comm_i
+    ptw_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_miss_triggers_ptw_req 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     2 
+    cache_tlb_comm_i
+    ptw_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_no_new_ptw_req_while_waiting 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     1 
+    ptw_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_passthrough_no_ptw_req 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     1 
+    cache_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_pmu_access_o_correct 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_pmu_miss_o_correct 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_ptw_req_data_matches_miss_req 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     2 
+    current_state
+    tlb_req_tmp
+#Inputs       :     2 
+    cache_tlb_comm_i
+    ptw_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_ptw_req_deasserted_after_invalidation_when_ready 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     1 
+    ptw_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_ptw_req_implies_not_ready 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_ptw_req_is_single_pulse_if_ready 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     1 
+    ptw_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_tlb_not_ready_on_miss 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     2 
+    cache_tlb_comm_i
+    ptw_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_tlb_ready_after_cancelled_walk 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     2 
+    cache_tlb_comm_i
+    ptw_tlb_comm_i
+#Constraints  :     0 
+
+Property      : tlb.u_tlb_sva.a_tlb_ready_implies_no_ptw_req 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+

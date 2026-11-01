@@ -1,0 +1,33 @@
+Formal core summary view
+#Properties   :    14 
+    #scheduled    :     0 
+    #completed    :    14 
+        #success      :    14 
+        #failed       :     0 
+        #bounded      :     0 
+        #no_status    :     0 
+
+    #Registers (union)         :     2 
+    #Inputs (union)            :     2 
+    #Constraints (union)       :     0 
+
+Formal core list view
+------------------------------------------------------------------------------------------------------------------------
+ RunStatus |   #Registers |  #Inputs | #Constraints |       Status |        Depth |  SubType | Property
+------------------------------------------------------------------------------------------------------------------------
+ completed |            0 |        1 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_hit_never_triggers_ptw_req
+ completed |            1 |        2 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_invalidate_cancels_pending_ptw_req
+ completed |            1 |        2 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_miss_triggers_ptw_req
+ completed |            1 |        1 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_no_new_ptw_req_while_waiting
+ completed |            0 |        1 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_passthrough_no_ptw_req
+ completed |            0 |        0 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_pmu_access_o_correct
+ completed |            0 |        0 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_pmu_miss_o_correct
+ completed |            2 |        2 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_ptw_req_data_matches_miss_req
+ completed |            1 |        1 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_ptw_req_deasserted_after_invalidation_when_ready
+ completed |            0 |        0 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_ptw_req_implies_not_ready
+ completed |            1 |        1 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_ptw_req_is_single_pulse_if_ready
+ completed |            1 |        2 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_tlb_not_ready_on_miss
+ completed |            1 |        2 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_tlb_ready_after_cancelled_walk
+ completed |            0 |        0 |            0 |      success |            - |        - | tlb.u_tlb_sva.a_tlb_ready_implies_no_ptw_req
+------------------------------------------------------------------------------------------------------------------------
+

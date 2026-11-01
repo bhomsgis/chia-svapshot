@@ -1,0 +1,49 @@
+Formal core summary view
+#Properties   :    30 
+    #scheduled    :     0 
+    #completed    :    30 
+        #success      :    30 
+        #failed       :     0 
+        #bounded      :     0 
+        #no_status    :     0 
+
+    #Registers (union)         :     9 
+    #Inputs (union)            :     3 
+    #Constraints (union)       :     0 
+
+Formal core list view
+------------------------------------------------------------------------------------------------------------------------
+ RunStatus |   #Registers |  #Inputs | #Constraints |       Status |        Depth |  SubType | Property
+------------------------------------------------------------------------------------------------------------------------
+ completed |            1 |        3 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_counter_p0_stays_zero
+ completed |            1 |        3 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_counter_p1_stays_zero
+ completed |            0 |        1 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_dividend_d_logic
+ completed |            0 |        1 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_divisor_d_logic
+ completed |            5 |        3 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_flush_clears_valid_and_state
+ completed |            1 |        3 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_flush_resets_counters
+ completed |            3 |        3 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_flush_resets_division_regs
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_idle_output_zero
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_output_metadata_p0
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_output_metadata_p1
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_output_priority
+ completed |            2 |        3 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_output_valid_logic
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_quo0_div_by_zero
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_quo0_signed_diff_sign
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_quo0_signed_same_sign
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_quo0_unsigned
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_quo1_div_by_zero
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_quo1_signed_diff_sign
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_quo1_signed_same_sign
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_quo1_unsigned
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_result_div_normal_p0
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_result_div_normal_p1
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_result_rem_normal_p0
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_result_rem_normal_p1
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_rmd0_div_by_zero
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_rmd0_signed_neg_dividend
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_rmd0_signed_pos_dividend
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_rmd0_unsigned
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_rmd1_div_by_zero
+ completed |            0 |        0 |            0 |      success |            - |        - | div_unit.u_div_unit_sva.a_rmd1_unsigned
+------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,38 @@
+# Template for a target file. Run with:
+#   scripts/run_loop.sh --real --targets configs/my_targets.yaml --design my_block --llm <provider:model>
+#
+# Path variables: ${REPO_ROOT} (this repository), ${DUT_ROOT} (export it before the run),
+# ${SVAPSHOT_ROOT} (the SVApshot checkout).
+
+designs:
+  my_block:
+    # Module that SVApshot writes properties for and that the rewrite changes.
+    snapshot_module: my_block
+    # sequential: the block has a clock and a reset. combinational: the block holds logic between inputs and outputs.
+    module_type: sequential
+    # Source files. Files that declare a `package` compile first, in the order listed.
+    rtl:
+      - ${DUT_ROOT}/rtl/my_pkg.sv
+      - ${DUT_ROOT}/rtl/my_block.sv
+    # Optional: globs, extra package files, include directories, parameter overrides.
+    # rtl_globs: ["${DUT_ROOT}/rtl/leaf/*.sv"]
+    # packages: [${DUT_ROOT}/include/my_defs_pkg.sv]
+    # include_dirs: [${DUT_ROOT}/include]
+    # parameters: {WIDTH: 32}
+    # Optional: scope of the rewrite. `top` rewrites the module itself and keeps child
+    # instances as leaves. `hierarchy` allows the prompt to name child modules.
+    # rewrite_scope: top
+    # Goal text per rewrite mode. Each mode receives these words in its prompt.
+    rewrites:
+      optimise: Keep the interface and the function. Reduce the standard-cell area.
+      expand: Keep every current behaviour and add one capability on the existing ports.
+      trim: Keep the port list and implement only the essential path.
+    # area | delay | area_or_delay: the PPA axis that must improve.
+    goal: area
+    # The other axis may grow by at most this fraction.
+    max_regression: 0.05
+    # Optional: take elaboration parameters from the instance inside a parent module.
+    # match_instance:
+    #   parent: ${DUT_ROOT}/rtl/my_top.sv
+    #   instance: u_my_block
+    #   packages: [${DUT_ROOT}/rtl/my_pkg.sv]

@@ -1,0 +1,28 @@
+[Warning] FML_REPORT_CMD_DEPRECATED: The report_cov command has been deprecated starting with the 2016.06 release.
+	Please use the 'report_fv' command for reporting in the 'COV' app.
+
+  Summary Results
+   Property Summary: FPV_COV_FCORE
+   -----------------
+   > Constraint
+     - # found        : 1
+
+   Coverage Summary: FPV_COV_FCORE
+   -----------------
+   > Line Coverage
+     - # found        : 41
+     - # covered      : 41
+
+   > Condition Coverage
+     - # found        : 69
+     - # covered      : 69
+
+   > Toggle Coverage
+     - # found        : 6304
+     - # covered      : 6304
+
+   > Disabled
+     - # found        : 535
+     - # cover        : 535
+
+

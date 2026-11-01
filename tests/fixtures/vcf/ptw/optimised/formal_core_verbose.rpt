@@ -1,0 +1,416 @@
+Formal core verbose view
+Property      : ptw.u_ptw_sva.a_count_resets_on_new_req 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    count_q
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dmem_nack_causes_retry 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dmem_req_addr_is_pte_addr 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dmem_req_in_s_req_only 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dmem_req_is_physical 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dmem_req_is_read 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dmem_req_kill_is_false 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dmem_req_type_is_doubleword 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_done_to_ready 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dtlb_error_is_valid_resp 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dtlb_g_stage_error_is_error 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dtlb_req_when_ready_gets_response 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_dtlb_resp_is_single_cycle 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    ptw_arb_inst.current_state
+#Inputs       :     2 
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_error_to_ready 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_g_stage_error_implies_g_stage 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_g_to_vs_clears_g_stage_flag 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_g_to_vs_restores_context 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     2 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_initial_pte_ppn_from_csr 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     2 
+    current_state
+    r_pte
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_invalidate_tlb_hgatp_passthrough 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_invalidate_tlb_passthrough 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_invalidate_tlb_satp_passthrough 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_invalidate_tlb_vsatp_passthrough 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_itlb_error_is_valid_resp 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_itlb_g_stage_error_is_error 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_itlb_req_when_ready_gets_response 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_itlb_resp_is_single_cycle 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    ptw_arb_inst.current_state
+#Inputs       :     2 
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_leaf_and_table_are_exclusive 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     1 
+    dmem_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_pmu_hit_in_s_req_only 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_pmu_hit_miss_exclusive 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     2 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_pmu_miss_in_s_wait_only 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     1 
+    dmem_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_ptw_ready_in_s_ready_only 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_ready_to_req_on_valid 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_req_stays_req_on_cache_hit 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_req_to_wait_on_dmem_ready 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_request_is_latched 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     2 
+    current_state
+    r_req
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_resp_error_in_error_state_only 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_resp_exclusive 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_resp_valid_in_final_states_only 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_vs_to_g_resets_count 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     2 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_vs_to_g_saves_context 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_wait_stays_wait 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_wait_to_req_on_nack 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+Property      : ptw.u_ptw_sva.a_wait_to_req_on_table 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    current_state
+#Inputs       :     4 
+    csr_ptw_comm_i
+    dmem_ptw_comm_i
+    dtlb_ptw_comm_i
+    itlb_ptw_comm_i
+#Constraints  :     0 
+
+

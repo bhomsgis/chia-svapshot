@@ -1,0 +1,273 @@
+Formal core verbose view
+Property      : div_unit.u_div_unit_sva.a_counter_p0_stays_zero 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    cycles_counter
+#Inputs       :     3 
+    div_unit_sel_i
+    flush_div_i
+    instruction_i
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_counter_p1_stays_zero 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    cycles_counter
+#Inputs       :     3 
+    div_unit_sel_i
+    flush_div_i
+    instruction_i
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_dividend_d_logic 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_divisor_d_logic 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_flush_clears_valid_and_state 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     5 
+    div_zero_q
+    instruction_q
+    op_32_q
+    same_sign_q
+    signed_op_q
+#Inputs       :     3 
+    div_unit_sel_i
+    flush_div_i
+    instruction_i
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_flush_resets_counters 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     1 
+    cycles_counter
+#Inputs       :     3 
+    div_unit_sel_i
+    flush_div_i
+    instruction_i
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_flush_resets_division_regs 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     3 
+    dividend_quotient_q
+    divisor_q
+    remanent_q
+#Inputs       :     3 
+    div_unit_sel_i
+    flush_div_i
+    instruction_i
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_idle_output_zero 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_output_metadata_p0 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_output_metadata_p1 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_output_priority 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_output_valid_logic 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     2 
+    cycles_counter
+    instruction_q
+#Inputs       :     3 
+    div_unit_sel_i
+    flush_div_i
+    instruction_i
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_quo0_div_by_zero 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_quo0_signed_diff_sign 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_quo0_signed_same_sign 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_quo0_unsigned 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_quo1_div_by_zero 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_quo1_signed_diff_sign 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_quo1_signed_same_sign 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_quo1_unsigned 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_result_div_normal_p0 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_result_div_normal_p1 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_result_rem_normal_p0 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_result_rem_normal_p1 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_rmd0_div_by_zero 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_rmd0_signed_neg_dividend 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_rmd0_signed_pos_dividend 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_rmd0_unsigned 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_rmd1_div_by_zero 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+Property      : div_unit.u_div_unit_sva.a_rmd1_unsigned 
+SubType       :     - 
+Status        : success 
+Depth         :     - 
+#Registers    :     0 
+#Inputs       :     0 
+#Constraints  :     0 
+
+

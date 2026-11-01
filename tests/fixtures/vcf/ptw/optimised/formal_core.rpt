@@ -1,0 +1,62 @@
+Formal core summary view
+#Properties   :    43 
+    #scheduled    :     0 
+    #completed    :    43 
+        #success      :    43 
+        #failed       :     0 
+        #bounded      :     0 
+        #no_status    :     0 
+
+    #Registers (union)         :     5 
+    #Inputs (union)            :     4 
+    #Constraints (union)       :     0 
+
+Formal core list view
+------------------------------------------------------------------------------------------------------------------------
+ RunStatus |   #Registers |  #Inputs | #Constraints |       Status |        Depth |  SubType | Property
+------------------------------------------------------------------------------------------------------------------------
+ completed |            1 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_count_resets_on_new_req
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dmem_nack_causes_retry
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dmem_req_addr_is_pte_addr
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dmem_req_in_s_req_only
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dmem_req_is_physical
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dmem_req_is_read
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dmem_req_kill_is_false
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dmem_req_type_is_doubleword
+ completed |            1 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_done_to_ready
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dtlb_error_is_valid_resp
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dtlb_g_stage_error_is_error
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dtlb_req_when_ready_gets_response
+ completed |            1 |        2 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_dtlb_resp_is_single_cycle
+ completed |            1 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_error_to_ready
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_g_stage_error_implies_g_stage
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_g_to_vs_clears_g_stage_flag
+ completed |            0 |        2 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_g_to_vs_restores_context
+ completed |            2 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_initial_pte_ppn_from_csr
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_invalidate_tlb_hgatp_passthrough
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_invalidate_tlb_passthrough
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_invalidate_tlb_satp_passthrough
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_invalidate_tlb_vsatp_passthrough
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_itlb_error_is_valid_resp
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_itlb_g_stage_error_is_error
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_itlb_req_when_ready_gets_response
+ completed |            1 |        2 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_itlb_resp_is_single_cycle
+ completed |            0 |        1 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_leaf_and_table_are_exclusive
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_pmu_hit_in_s_req_only
+ completed |            0 |        2 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_pmu_hit_miss_exclusive
+ completed |            0 |        1 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_pmu_miss_in_s_wait_only
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_ptw_ready_in_s_ready_only
+ completed |            1 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_ready_to_req_on_valid
+ completed |            1 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_req_stays_req_on_cache_hit
+ completed |            1 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_req_to_wait_on_dmem_ready
+ completed |            2 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_request_is_latched
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_resp_error_in_error_state_only
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_resp_exclusive
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_resp_valid_in_final_states_only
+ completed |            0 |        2 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_vs_to_g_resets_count
+ completed |            0 |        0 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_vs_to_g_saves_context
+ completed |            1 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_wait_stays_wait
+ completed |            0 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_wait_to_req_on_nack
+ completed |            1 |        4 |            0 |      success |            - |        - | ptw.u_ptw_sva.a_wait_to_req_on_table
+------------------------------------------------------------------------------------------------------------------------
+

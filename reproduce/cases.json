@@ -1,0 +1,59 @@
+{
+  "description": "Three LLM rewrites of RTL modules (div_unit, ptw, tlb) with the retained SVApshot properties, clocking, and synthesis settings.",
+  "generic_synth_note": "The technology-independent judge runs `synth` with abc for div_unit and `synth -noabc` for ptw and tlb.",
+  "cases": {
+    "div_unit": {
+      "top": "div_unit",
+      "clock": "clk_i",
+      "reset": "rstn_i",
+      "reset_sense": "low",
+      "sources": [
+        "fpnew_pkg.sv",
+        "riscv_pkg.sv",
+        "drac_pkg.sv",
+        "div_4bits.sv",
+        "div_unit.sv"
+      ],
+      "leaves_unchanged": [
+        "div_4bits"
+      ],
+      "synth_noabc": false,
+      "reference_llm": "gemini-3.1-pro-preview"
+    },
+    "ptw": {
+      "top": "ptw",
+      "clock": "clk_i",
+      "reset": "rstn_i",
+      "reset_sense": "low",
+      "sources": [
+        "riscv_pkg.sv",
+        "mmu_pkg.sv",
+        "pseudoLRU.sv",
+        "ptw_arb.sv",
+        "ptw.sv"
+      ],
+      "leaves_unchanged": [
+        "ptw_arb",
+        "pseudoLRU"
+      ],
+      "synth_noabc": true,
+      "reference_llm": "gemini-3.8-flash"
+    },
+    "tlb": {
+      "top": "tlb",
+      "clock": "clk_i",
+      "reset": "rstn_i",
+      "reset_sense": "low",
+      "sources": [
+        "mmu_pkg.sv",
+        "pseudoLRU.sv",
+        "tlb.sv"
+      ],
+      "leaves_unchanged": [
+        "pseudoLRU"
+      ],
+      "synth_noabc": true,
+      "reference_llm": "gemini-3.8-flash"
+    }
+  }
+}

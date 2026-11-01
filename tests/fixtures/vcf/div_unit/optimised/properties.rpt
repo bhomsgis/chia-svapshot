@@ -1,0 +1,626 @@
+
+  Summary Results
+   Property Summary: FPV
+   -----------------
+   > Assertion
+     - # found        : 30
+     - # proven       : 30
+
+   > Vacuity
+     - # found        : 29
+     - # non_vacuous  : 29
+
+   > Witness
+     - # found        : 30
+     - # covered      : 30
+
+   > Constraint
+     - # found        : 1
+
+
+  Verbose Results
+   Property Verbose List:
+   ----------------------
+   > Assertion
+     # Assertion: 30
+     > ID: [0] proven 
+      - name          : div_unit.u_div_unit_sva.a_counter_p0_stays_zero
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:110
+      - engine        : e2
+      - safe_depth    : 7
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [1] proven 
+      - name          : div_unit.u_div_unit_sva.a_counter_p1_stays_zero
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:115
+      - engine        : e2
+      - safe_depth    : 7
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [2] proven 
+      - name          : div_unit.u_div_unit_sva.a_dividend_d_logic
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:11 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:125
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [3] proven 
+      - name          : div_unit.u_div_unit_sva.a_divisor_d_logic
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:11 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:130
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [4] proven 
+      - name          : div_unit.u_div_unit_sva.a_flush_clears_valid_and_state
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:80
+      - engine        : e2
+      - safe_depth    : 7
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [5] proven 
+      - name          : div_unit.u_div_unit_sva.a_flush_resets_counters
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:55
+      - engine        : e2
+      - safe_depth    : 7
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [6] proven 
+      - name          : div_unit.u_div_unit_sva.a_flush_resets_division_regs
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:85
+      - engine        : e2
+      - safe_depth    : 7
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [7] proven 
+      - name          : div_unit.u_div_unit_sva.a_idle_output_zero
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:120
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [8] proven 
+      - name          : div_unit.u_div_unit_sva.a_output_metadata_p0
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:70
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [9] proven 
+      - name          : div_unit.u_div_unit_sva.a_output_metadata_p1
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:75
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [10] proven 
+      - name          : div_unit.u_div_unit_sva.a_output_priority
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:11 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:65
+      - engine        : t1
+      - vacuity_engine: b6
+      - vacuity_safe_depth: 17
+      - vacuity_depth : 18
+      - witness_engine: b6
+      - witness_safe_depth: 17
+      - witness_depth : 18
+
+     > ID: [11] proven 
+      - name          : div_unit.u_div_unit_sva.a_output_valid_logic
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:15 - Oct 31
+      - elapsed_time  : 00:00:05
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:60
+      - engine        : e1
+      - safe_depth    : 68
+      - witness_engine: s1
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [12] proven 
+      - name          : div_unit.u_div_unit_sva.a_quo0_div_by_zero
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:11 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:135
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [13] proven 
+      - name          : div_unit.u_div_unit_sva.a_quo0_signed_diff_sign
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:150
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 6
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 6
+
+     > ID: [14] proven 
+      - name          : div_unit.u_div_unit_sva.a_quo0_signed_same_sign
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:145
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [15] proven 
+      - name          : div_unit.u_div_unit_sva.a_quo0_unsigned
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:140
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [16] proven 
+      - name          : div_unit.u_div_unit_sva.a_quo1_div_by_zero
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:11 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:155
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [17] proven 
+      - name          : div_unit.u_div_unit_sva.a_quo1_signed_diff_sign
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:170
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 6
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 6
+
+     > ID: [18] proven 
+      - name          : div_unit.u_div_unit_sva.a_quo1_signed_same_sign
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:165
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 3
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 3
+
+     > ID: [19] proven 
+      - name          : div_unit.u_div_unit_sva.a_quo1_unsigned
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:160
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [20] proven 
+      - name          : div_unit.u_div_unit_sva.a_result_div_normal_p0
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:90
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [21] proven 
+      - name          : div_unit.u_div_unit_sva.a_result_div_normal_p1
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:100
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [22] proven 
+      - name          : div_unit.u_div_unit_sva.a_result_rem_normal_p0
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:95
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [23] proven 
+      - name          : div_unit.u_div_unit_sva.a_result_rem_normal_p1
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:105
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [24] proven 
+      - name          : div_unit.u_div_unit_sva.a_rmd0_div_by_zero
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:11 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:175
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [25] proven 
+      - name          : div_unit.u_div_unit_sva.a_rmd0_signed_neg_dividend
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:190
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 6
+      - witness_engine: s1
+      - witness_safe_depth: 1
+      - witness_depth : 6
+
+     > ID: [26] proven 
+      - name          : div_unit.u_div_unit_sva.a_rmd0_signed_pos_dividend
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:185
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [27] proven 
+      - name          : div_unit.u_div_unit_sva.a_rmd0_unsigned
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:180
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [28] proven 
+      - name          : div_unit.u_div_unit_sva.a_rmd1_div_by_zero
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:11 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:195
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [29] proven 
+      - name          : div_unit.u_div_unit_sva.a_rmd1_unsigned
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:12 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/div_unit_optimised/sva/div_unit_prop.sv:200
+      - engine        : e2
+      - safe_depth    : 6
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+
+   > Constraint
+     # Constraint: 1
+     > ID: [6230] constrained 
+      - name          : constant_6230
+      - type          : constconstraint
+      - expression    : rstn_i==1
+      - usage         : assume
+
+
+
+

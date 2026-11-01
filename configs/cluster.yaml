@@ -1,0 +1,68 @@
+# Logical workers for the CHIA loop on a Ray cluster.
+#
+# Bring it up with:  chia up configs/cluster.yaml
+# Submit the loop:   chia job submit --working-dir . -- python chia_ppa_loop.py --real \
+#                        --llm <provider:model> --ray-address auto
+#
+# The three worker classes carry the resource labels that the nodes in
+# chia_svapshot/ppa_nodes.py request. `formal` is the scarce one: its worker
+# count equals the number of concurrent VC Formal licenses you own, so Ray
+# schedules the licensed stages by resource count.
+#
+# Set CHIA_ROOT to this repository and VC_FORMAL_HOME to your VC Formal install
+# on every machine. Workers run on the host; add a `docker:` section per worker
+# to containerize the toolchain.
+
+provider:
+    head_ip: ${THIS_MACHINE}
+
+auth:
+    ssh_user: ${USER}
+    # ssh_private_key: ~/.ssh/id_rsa
+
+available_node_types:
+    # DUT staging, artifact parsing, retention filter. Cheap and parallel.
+    chia_cpu:
+        resources: {"svapshot_cpu": 4}
+        num_workers: 1
+        compatible_ips: ["${THIS_MACHINE}"]
+        worker_setup_commands:
+            - "source ${CHIA_ROOT}/scripts/env.sh"
+
+    # RTL rewrite and expand calls. The bound keeps a wide loop under the provider rate limit.
+    chia_llm:
+        resources: {"llm": 2}
+        num_workers: 1
+        compatible_ips: ["${THIS_MACHINE}"]
+        worker_setup_commands:
+            - "source ${CHIA_ROOT}/scripts/env.sh"
+
+    # Each unit is one VC Formal license.
+    chia_formal:
+        resources: {"formal": 1}
+        num_workers: 1
+        compatible_ips: ["${THIS_MACHINE}"]
+        worker_setup_commands:
+            - "test -n \"${VC_FORMAL_HOME}\" || { echo set VC_FORMAL_HOME; exit 1; }"
+            - "source ${CHIA_ROOT}/scripts/env.sh"
+
+    # Yosys synthesis and EQY.
+    chia_yosys:
+        resources: {"yosys": 2}
+        num_workers: 1
+        compatible_ips: ["${THIS_MACHINE}"]
+        worker_setup_commands:
+            - "source ${CHIA_ROOT}/scripts/env.sh"
+
+head_env_commands: ["source ${CHIA_ROOT}/scripts/env.sh"]
+head_setup_commands: ["source ${CHIA_ROOT}/scripts/env.sh"]
+head_start_ray_commands:
+    - "source ${CHIA_ROOT}/scripts/env.sh && ray stop"
+    - "source ${CHIA_ROOT}/scripts/env.sh && \
+       ray start --head --port=6379 --include-dashboard=True \
+       --dashboard-agent-listen-port=0"
+
+worker_start_ray_commands:
+    - "source ${CHIA_ROOT}/scripts/env.sh && ray stop"
+    - "source ${CHIA_ROOT}/scripts/env.sh && \
+       ray start --address=$RAY_HEAD_IP:6379 --dashboard-agent-listen-port=0"

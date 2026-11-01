@@ -1,0 +1,18 @@
+# Tools and environments installed by the scripts
+toolchains/
+external/
+.venv/
+chia_env/
+
+# Results and loop workspaces
+results/
+runs/
+snapshot_library/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env

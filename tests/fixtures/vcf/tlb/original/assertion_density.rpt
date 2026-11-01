@@ -1,0 +1,31 @@
+DENSITY_SCOPE reg
+Uncovered Registers (asserts): 0
+
+Covered Registers (asserts): 4
+#1: tlb.tlb_PLRU.plru_tree_q
+#2: tlb.tlb_req_tmp
+#3: tlb.tlb_entries
+#4: tlb.current_state
+
+Total Registers in given scope : 4
+#1: tlb.tlb_PLRU.plru_tree_q
+#2: tlb.tlb_req_tmp
+#3: tlb.tlb_entries
+#4: tlb.current_state
+
+DENSITY_SCOPE pi
+Uncovered PIs (asserts): 0
+
+Covered PIs (asserts): 4
+#1: tlb.rstn_i
+#2: tlb.clk_i
+#3: tlb.ptw_tlb_comm_i
+#4: tlb.cache_tlb_comm_i
+
+Total PIs in given scope : 4
+#1: tlb.cache_tlb_comm_i
+#2: tlb.clk_i
+#3: tlb.ptw_tlb_comm_i
+#4: tlb.rstn_i
+
+

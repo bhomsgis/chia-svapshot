@@ -1,0 +1,61 @@
+DENSITY_SCOPE reg
+Uncovered Registers (asserts): 0
+
+Covered Registers (asserts): 17
+#1: ptw.virt_level_q
+#2: ptw.guest_pte_q
+#3: ptw.ptw_PLRU.plru_tree_q
+#4: ptw.count_q
+#5: ptw.r_req
+#6: ptw.access_hit
+#7: ptw.current_state
+#8: ptw.is_g_stage_q
+#9: ptw.r_pte
+#10: ptw.vs_pte_addr_reg_q
+#11: ptw.ptecache_entry
+#12: ptw.allow_vs_req_q
+#13: ptw.vs_count_reg_q
+#14: ptw.last_g_stage_q
+#15: ptw.ptw_arb_inst.current_state
+#16: ptw.ptw_arb_inst.is_req_waiting_q
+#17: ptw.ptw_arb_inst.itlb_req_waiting_q
+
+Total Registers in given scope : 17
+#1: ptw.vs_pte_addr_reg_q
+#2: ptw.last_g_stage_q
+#3: ptw.ptw_arb_inst.current_state
+#4: ptw.ptecache_entry
+#5: ptw.r_pte
+#6: ptw.vs_count_reg_q
+#7: ptw.allow_vs_req_q
+#8: ptw.r_req
+#9: ptw.count_q
+#10: ptw.virt_level_q
+#11: ptw.is_g_stage_q
+#12: ptw.ptw_arb_inst.is_req_waiting_q
+#13: ptw.ptw_arb_inst.itlb_req_waiting_q
+#14: ptw.ptw_PLRU.plru_tree_q
+#15: ptw.guest_pte_q
+#16: ptw.current_state
+#17: ptw.access_hit
+
+DENSITY_SCOPE pi
+Uncovered PIs (asserts): 0
+
+Covered PIs (asserts): 6
+#1: ptw.dtlb_ptw_comm_i
+#2: ptw.itlb_ptw_comm_i
+#3: ptw.rstn_i
+#4: ptw.clk_i
+#5: ptw.dmem_ptw_comm_i
+#6: ptw.csr_ptw_comm_i
+
+Total PIs in given scope : 6
+#1: ptw.clk_i
+#2: ptw.csr_ptw_comm_i
+#3: ptw.dmem_ptw_comm_i
+#4: ptw.dtlb_ptw_comm_i
+#5: ptw.itlb_ptw_comm_i
+#6: ptw.rstn_i
+
+

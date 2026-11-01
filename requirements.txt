@@ -1,0 +1,8 @@
+# The reproduction scripts (reproduce/) use the Python standard library.
+# The CHIA loop (chia_ppa_loop.py) needs Python 3.10 or newer and these packages.
+chialoops==1.0.1
+pyyaml>=6
+# Vertex AI provider only (--llm vertex:<model>)
+google-genai>=1.0
+# Tests
+pytest>=8

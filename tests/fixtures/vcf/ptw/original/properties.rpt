@@ -1,0 +1,836 @@
+
+  Summary Results
+   Property Summary: FPV
+   -----------------
+   > Assertion
+     - # found        : 43
+     - # proven       : 43
+
+   > Vacuity
+     - # found        : 33
+     - # non_vacuous  : 33
+
+   > Witness
+     - # found        : 43
+     - # covered      : 43
+
+   > Constraint
+     - # found        : 1
+
+
+  Verbose Results
+   Property Verbose List:
+   ----------------------
+   > Assertion
+     # Assertion: 43
+     > ID: [0] proven 
+      - name          : ptw.u_ptw_sva.a_count_resets_on_new_req
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:231
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [1] proven 
+      - name          : ptw.u_ptw_sva.a_dmem_nack_causes_retry
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:58 - Oct 31
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:312
+      - engine        : STRUCTURALLY
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: b8
+      - witness_safe_depth: 2
+      - witness_depth : 3
+
+     > ID: [2] proven 
+      - name          : ptw.u_ptw_sva.a_dmem_req_addr_is_pte_addr
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:296
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [3] proven 
+      - name          : ptw.u_ptw_sva.a_dmem_req_in_s_req_only
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:216
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [4] proven 
+      - name          : ptw.u_ptw_sva.a_dmem_req_is_physical
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:141
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [5] proven 
+      - name          : ptw.u_ptw_sva.a_dmem_req_is_read
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:146
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [6] proven 
+      - name          : ptw.u_ptw_sva.a_dmem_req_kill_is_false
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:256
+      - engine        : t1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [7] proven 
+      - name          : ptw.u_ptw_sva.a_dmem_req_type_is_doubleword
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:251
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [8] proven 
+      - name          : ptw.u_ptw_sva.a_done_to_ready
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:201
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: b8
+      - witness_safe_depth: 4
+      - witness_depth : 5
+
+     > ID: [9] proven 
+      - name          : ptw.u_ptw_sva.a_dtlb_error_is_valid_resp
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:126
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+     > ID: [10] proven 
+      - name          : ptw.u_ptw_sva.a_dtlb_g_stage_error_is_error
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:136
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+     > ID: [11] proven 
+      - name          : ptw.u_ptw_sva.a_dtlb_req_when_ready_gets_response
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:58 - Oct 31
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:101
+      - engine        : STRUCTURALLY
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+     > ID: [12] proven 
+      - name          : ptw.u_ptw_sva.a_dtlb_resp_is_single_cycle
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:116
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 5
+
+     > ID: [13] proven 
+      - name          : ptw.u_ptw_sva.a_error_to_ready
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:206
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 5
+
+     > ID: [14] proven 
+      - name          : ptw.u_ptw_sva.a_g_stage_error_implies_g_stage
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:246
+      - engine        : t1
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+     > ID: [15] proven 
+      - name          : ptw.u_ptw_sva.a_g_to_vs_clears_g_stage_flag
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:291
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 5
+      - vacuity_depth : 6
+      - witness_engine: b8
+      - witness_safe_depth: 5
+      - witness_depth : 6
+
+     > ID: [16] proven 
+      - name          : ptw.u_ptw_sva.a_g_to_vs_restores_context
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:281
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 5
+      - vacuity_depth : 6
+      - witness_engine: b8
+      - witness_safe_depth: 5
+      - witness_depth : 6
+
+     > ID: [17] proven 
+      - name          : ptw.u_ptw_sva.a_initial_pte_ppn_from_csr
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:271
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [18] proven 
+      - name          : ptw.u_ptw_sva.a_invalidate_tlb_hgatp_passthrough
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:171
+      - engine        : t1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [19] proven 
+      - name          : ptw.u_ptw_sva.a_invalidate_tlb_passthrough
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:156
+      - engine        : t1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [20] proven 
+      - name          : ptw.u_ptw_sva.a_invalidate_tlb_satp_passthrough
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:161
+      - engine        : t1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [21] proven 
+      - name          : ptw.u_ptw_sva.a_invalidate_tlb_vsatp_passthrough
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:166
+      - engine        : t1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [22] proven 
+      - name          : ptw.u_ptw_sva.a_itlb_error_is_valid_resp
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:121
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+     > ID: [23] proven 
+      - name          : ptw.u_ptw_sva.a_itlb_g_stage_error_is_error
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:131
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+     > ID: [24] proven 
+      - name          : ptw.u_ptw_sva.a_itlb_req_when_ready_gets_response
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:29:58 - Oct 31
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:96
+      - engine        : STRUCTURALLY
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+     > ID: [25] proven 
+      - name          : ptw.u_ptw_sva.a_itlb_resp_is_single_cycle
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:111
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: s1
+      - vacuity_safe_depth: 3
+      - vacuity_depth : 4
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 5
+
+     > ID: [26] proven 
+      - name          : ptw.u_ptw_sva.a_leaf_and_table_are_exclusive
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:261
+      - engine        : t3
+      - safe_depth    : 2
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [27] proven 
+      - name          : ptw.u_ptw_sva.a_pmu_hit_in_s_req_only
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:221
+      - engine        : t1
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [28] proven 
+      - name          : ptw.u_ptw_sva.a_pmu_hit_miss_exclusive
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:151
+      - engine        : e2
+      - safe_depth    : 8
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [29] proven 
+      - name          : ptw.u_ptw_sva.a_pmu_miss_in_s_wait_only
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:226
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 2
+      - vacuity_depth : 3
+      - witness_engine: b8
+      - witness_safe_depth: 2
+      - witness_depth : 3
+
+     > ID: [30] proven 
+      - name          : ptw.u_ptw_sva.a_ptw_ready_in_s_ready_only
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:211
+      - engine        : t1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [31] proven 
+      - name          : ptw.u_ptw_sva.a_ready_to_req_on_valid
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:176
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [32] proven 
+      - name          : ptw.u_ptw_sva.a_req_stays_req_on_cache_hit
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:186
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 2
+      - witness_depth : 3
+
+     > ID: [33] proven 
+      - name          : ptw.u_ptw_sva.a_req_to_wait_on_dmem_ready
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:181
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 1
+      - vacuity_depth : 2
+      - witness_engine: b8
+      - witness_safe_depth: 2
+      - witness_depth : 3
+
+     > ID: [34] proven 
+      - name          : ptw.u_ptw_sva.a_request_is_latched
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:266
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 0
+      - vacuity_depth : 1
+      - witness_engine: b8
+      - witness_safe_depth: 1
+      - witness_depth : 2
+
+     > ID: [35] proven 
+      - name          : ptw.u_ptw_sva.a_resp_error_in_error_state_only
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:241
+      - engine        : t1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [36] proven 
+      - name          : ptw.u_ptw_sva.a_resp_exclusive
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:106
+      - engine        : e2
+      - safe_depth    : 8
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [37] proven 
+      - name          : ptw.u_ptw_sva.a_resp_valid_in_final_states_only
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:07 - Oct 31
+      - elapsed_time  : 00:00:01
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:236
+      - engine        : t1
+      - witness_engine: b8
+      - witness_safe_depth: 0
+      - witness_depth : 1
+
+     > ID: [38] proven 
+      - name          : ptw.u_ptw_sva.a_vs_to_g_resets_count
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:286
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 2
+      - vacuity_depth : 3
+      - witness_engine: b8
+      - witness_safe_depth: 2
+      - witness_depth : 3
+
+     > ID: [39] proven 
+      - name          : ptw.u_ptw_sva.a_vs_to_g_saves_context
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:276
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 2
+      - vacuity_depth : 3
+      - witness_engine: b8
+      - witness_safe_depth: 2
+      - witness_depth : 3
+
+     > ID: [40] proven 
+      - name          : ptw.u_ptw_sva.a_wait_stays_wait
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:191
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 2
+      - vacuity_depth : 3
+      - witness_engine: s1
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+     > ID: [41] proven 
+      - name          : ptw.u_ptw_sva.a_wait_to_req_on_nack
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:346
+      - engine        : e2
+      - safe_depth    : 7
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 2
+      - vacuity_depth : 3
+      - witness_engine: b8
+      - witness_safe_depth: 2
+      - witness_depth : 3
+
+     > ID: [42] proven 
+      - name          : ptw.u_ptw_sva.a_wait_to_req_on_table
+      - vacuity       : non_vacuous
+      - witness       : covered
+      - language      : SVA
+      - type          : assert
+      - usage         : assert
+      - update_time   : 19:30:08 - Oct 31
+      - elapsed_time  : 00:00:02
+      - converge_time : 00:00:00
+      - location      : /work/ptw_original/sva/ptw_prop.sv:196
+      - engine        : e2
+      - safe_depth    : 8
+      - vacuity_engine: b8
+      - vacuity_safe_depth: 2
+      - vacuity_depth : 3
+      - witness_engine: b8
+      - witness_safe_depth: 3
+      - witness_depth : 4
+
+
+   > Constraint
+     # Constraint: 1
+     > ID: [6638] constrained 
+      - name          : constant_6638
+      - type          : constconstraint
+      - expression    : rstn_i==1
+      - usage         : assume
+
+
+
+

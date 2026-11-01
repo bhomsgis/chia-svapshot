@@ -1,0 +1,85 @@
+{
+  "pdk": "sky130_fd_sc_hd tt_025C_1v80",
+  "sky130": {
+    "div_unit": {
+      "original": {
+        "cells": 8110,
+        "wires": 7357,
+        "area_um2": 73052.5632
+      },
+      "optimised": {
+        "cells": 7034,
+        "wires": 5400,
+        "area_um2": 56658.0896
+      },
+      "area_delta": -0.2244
+    },
+    "ptw": {
+      "original": {
+        "cells": 2567,
+        "wires": 2100,
+        "area_um2": 24611.104
+      },
+      "optimised": {
+        "cells": 2470,
+        "wires": 1935,
+        "area_um2": 23601.3856
+      },
+      "area_delta": -0.041
+    },
+    "tlb": {
+      "original": {
+        "cells": 5898,
+        "wires": 5060,
+        "area_um2": 65062.4
+      },
+      "optimised": {
+        "cells": 5196,
+        "wires": 4968,
+        "area_um2": 60077.6192
+      },
+      "area_delta": -0.0766
+    }
+  },
+  "generic": {
+    "div_unit": {
+      "original": {
+        "cells": 9257,
+        "wires": 7357,
+        "levels": 243
+      },
+      "optimised": {
+        "cells": 6531,
+        "wires": 5400,
+        "levels": 243
+      },
+      "abc": true
+    },
+    "ptw": {
+      "original": {
+        "cells": 3197,
+        "wires": 627,
+        "levels": 28
+      },
+      "optimised": {
+        "cells": 2427,
+        "wires": 590,
+        "levels": 27
+      },
+      "abc": false
+    },
+    "tlb": {
+      "original": {
+        "cells": 7344,
+        "wires": 1317,
+        "levels": 48
+      },
+      "optimised": {
+        "cells": 6821,
+        "wires": 966,
+        "levels": 40
+      },
+      "abc": false
+    }
+  }
+}

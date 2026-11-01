@@ -1,0 +1,224 @@
+{
+ "vc_formal": "X-2025.06-SP2",
+ "note": "Counts are [covered, total]. proved_non_vacuous counts assertions with a proof and a non-vacuous antecedent. report_cov holds the goal totals that `report_cov` prints after the structural formal-core coverage, per RTL set, measured with this repository's flow on VC Formal X-2025.06-SP2.",
+ "cases": {
+  "div_unit": {
+   "retained": 30,
+   "proved_non_vacuous": {
+    "original": 30,
+    "optimised": 30
+   },
+   "structural_coi_gold": {
+    "coverage": 1.0,
+    "signals": 31,
+    "union_cone": 31
+   },
+   "property_density": {
+    "registers": [
+     9,
+     9
+    ],
+    "inputs": [
+     5,
+     5
+    ]
+   },
+   "formal_core": {
+    "registers": [
+     9,
+     9
+    ],
+    "inputs": [
+     3,
+     5
+    ]
+   },
+   "report_cov": {
+    "original": {
+     "line": [
+      41,
+      41
+     ],
+     "condition": [
+      69,
+      69
+     ],
+     "toggle": [
+      6304,
+      6304
+     ]
+    },
+    "optimised": {
+     "line": [
+      30,
+      30
+     ],
+     "condition": [
+      66,
+      66
+     ],
+     "toggle": [
+      5042,
+      5042
+     ]
+    }
+   }
+  },
+  "ptw": {
+   "retained": 43,
+   "proved_non_vacuous": {
+    "original": 43,
+    "optimised": 43
+   },
+   "structural_coi_gold": {
+    "coverage": 0.8452,
+    "signals": 84,
+    "union_cone": 71
+   },
+   "property_density": {
+    "registers": [
+     17,
+     17
+    ],
+    "inputs": [
+     6,
+     6
+    ]
+   },
+   "formal_core": {
+    "registers": [
+     5,
+     17
+    ],
+    "inputs": [
+     4,
+     6
+    ]
+   },
+   "report_cov": {
+    "original": {
+     "line": [
+      73,
+      73
+     ],
+     "condition": [
+      132,
+      132
+     ],
+     "fsm_state": [
+      10,
+      10
+     ],
+     "fsm_transition": [
+      21,
+      21
+     ],
+     "toggle": [
+      2294,
+      2294
+     ]
+    },
+    "optimised": {
+     "line": [
+      69,
+      69
+     ],
+     "condition": [
+      133,
+      133
+     ],
+     "fsm_state": [
+      10,
+      10
+     ],
+     "fsm_transition": [
+      21,
+      21
+     ],
+     "toggle": [
+      1506,
+      1506
+     ]
+    }
+   }
+  },
+  "tlb": {
+   "retained": 14,
+   "proved_non_vacuous": {
+    "original": 14,
+    "optimised": 14
+   },
+   "structural_coi_gold": {
+    "coverage": 0.975,
+    "signals": 80,
+    "union_cone": 78
+   },
+   "property_density": {
+    "registers": [
+     4,
+     4
+    ],
+    "inputs": [
+     4,
+     4
+    ]
+   },
+   "formal_core": {
+    "registers": [
+     2,
+     4
+    ],
+    "inputs": [
+     2,
+     4
+    ]
+   },
+   "report_cov": {
+    "original": {
+     "line": [
+      79,
+      79
+     ],
+     "condition": [
+      321,
+      321
+     ],
+     "fsm_state": [
+      4,
+      4
+     ],
+     "fsm_transition": [
+      7,
+      7
+     ],
+     "toggle": [
+      1128,
+      1128
+     ]
+    },
+    "optimised": {
+     "line": [
+      76,
+      76
+     ],
+     "condition": [
+      820,
+      820
+     ],
+     "fsm_state": [
+      4,
+      4
+     ],
+     "fsm_transition": [
+      7,
+      7
+     ],
+     "toggle": [
+      1244,
+      1244
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,54 @@
+# RTL targets for the CHIA loop. Pick one with `--design <key>`.
+#
+# The three entries below point at the original RTL that ships under
+# reproduce/cases/. Copy configs/targets.template.yaml to start a file for
+# your own design and pass it with `--targets <file>`.
+#
+# Path variables: ${REPO_ROOT} (this repository) and ${DUT_ROOT} (a root you export).
+
+designs:
+  div_unit:
+    snapshot_module: div_unit
+    module_type: sequential
+    rtl:
+      - ${REPO_ROOT}/reproduce/cases/div_unit/original_rtl/fpnew_pkg.sv
+      - ${REPO_ROOT}/reproduce/cases/div_unit/original_rtl/riscv_pkg.sv
+      - ${REPO_ROOT}/reproduce/cases/div_unit/original_rtl/drac_pkg.sv
+      - ${REPO_ROOT}/reproduce/cases/div_unit/original_rtl/div_4bits.sv
+      - ${REPO_ROOT}/reproduce/cases/div_unit/original_rtl/div_unit.sv
+    rewrites:
+      optimise: Keep the interface and the function. Reduce the standard-cell area.
+      expand: Keep every current behaviour and add one capability on the existing ports.
+      trim: Keep the port list and implement only the essential path.
+    goal: area
+    max_regression: 0.05
+
+  ptw:
+    snapshot_module: ptw
+    module_type: sequential
+    rtl:
+      - ${REPO_ROOT}/reproduce/cases/ptw/original_rtl/riscv_pkg.sv
+      - ${REPO_ROOT}/reproduce/cases/ptw/original_rtl/mmu_pkg.sv
+      - ${REPO_ROOT}/reproduce/cases/ptw/original_rtl/pseudoLRU.sv
+      - ${REPO_ROOT}/reproduce/cases/ptw/original_rtl/ptw_arb.sv
+      - ${REPO_ROOT}/reproduce/cases/ptw/original_rtl/ptw.sv
+    rewrites:
+      optimise: Keep the interface and the function. Reduce the standard-cell area.
+      expand: Keep every current behaviour and add one capability on the existing ports.
+      trim: Keep the port list and implement only the essential path.
+    goal: area
+    max_regression: 0.05
+
+  tlb:
+    snapshot_module: tlb
+    module_type: sequential
+    rtl:
+      - ${REPO_ROOT}/reproduce/cases/tlb/original_rtl/mmu_pkg.sv
+      - ${REPO_ROOT}/reproduce/cases/tlb/original_rtl/pseudoLRU.sv
+      - ${REPO_ROOT}/reproduce/cases/tlb/original_rtl/tlb.sv
+    rewrites:
+      optimise: Keep the interface and the function. Reduce the standard-cell area.
+      expand: Keep every current behaviour and add one capability on the existing ports.
+      trim: Keep the port list and implement only the essential path.
+    goal: area
+    max_regression: 0.05

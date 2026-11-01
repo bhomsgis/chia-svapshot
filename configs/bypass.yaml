@@ -1,0 +1,21 @@
+# Dry run for the CHIA loop.
+#
+# A bypassed node is still dispatched through Ray with its real resource
+# label, and it returns a synthetic payload (fixed cell counts, proved
+# properties, and an unchanged RTL copy). The dry run checks the wiring of the
+# loop graph on a machine that holds only Python and Ray.
+# Delete an entry to run that stage for real.
+
+bypass:
+    vcf_elaborate:
+        bypass: true
+    yosys_ppa:
+        bypass: true
+    svapshot_generate_and_freeze:
+        bypass: true
+    llm_rtl_rewrite:
+        bypass: true
+    svapshot_reprove:
+        bypass: true
+    yosys_lec:
+        bypass: true
